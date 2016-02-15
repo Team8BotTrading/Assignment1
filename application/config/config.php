@@ -1,6 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+// the menu basics (text navbar)
+$config['menu_choices'] = array(
+	'menudata' => array(
+		array('name' => 'Home', 'link' => '/'),
+		array('name' => 'Portfolio', 'link' => '/Portfolio'),
+                array('name' => 'Assembly', 'link' => '/Assembly'),
+	)
+);
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -23,7 +30,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+//ziqi fix from '' to '/'
+$config['base_url'] = '/';
 
 /*
 |--------------------------------------------------------------------------
@@ -314,7 +322,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = '123456';
 
 /*
 |--------------------------------------------------------------------------
